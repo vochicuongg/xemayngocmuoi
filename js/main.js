@@ -21,7 +21,7 @@ const translations = {
         services_title: "Đội Xe Của Chúng Tôi",
         services_desc: "Đa dạng các dòng xe tay ga từ bình dân đến cao cấp",
         bike_1_name: "Honda AirBlade 2012 - Phiên bản đỏ đen",
-        bike_2_name: "Honda AirBlade 2018 - Phiên bản đen vàng",
+        bike_2_name: "Honda AirBlade 2012 - Phiên bản trắng đen",
         bike_3_name: "Yamaha NVX",
         price_day: "/ ngày",
         spec_gas: "Tiết kiệm xăng",
@@ -35,8 +35,8 @@ const translations = {
         explore_desc: "Những điểm đến không thể bỏ lỡ cùng chiếc xe của bạn",
         dest_1_name: "Đồi Cát Bay",
         dest_1_desc: "Trải nghiệm trượt cát đầy thú vị.",
-        dest_2_name: "Mũi Né",
-        dest_2_desc: "Bãi biển xanh và hàng dừa thơ mộng.",
+        dest_2_name: "Biển Hòn Rơm",
+        dest_2_desc: "Bãi biển xanh thơ mộng.",
         dest_3_name: "Bàu Trắng",
         dest_3_desc: "Cung đường ven biển đẹp nhất Việt Nam.",
         footer_desc: "Đồng hành cùng bạn trên mọi nẻo đường Phan Thiết - Mũi Né. Dịch vụ uy tín, tận tâm, chất lượng.",
@@ -65,7 +65,7 @@ const translations = {
         services_title: "Our Fleet",
         services_desc: "A variety of scooters from budget to premium",
         bike_1_name: "Honda AirBlade 2012 - Red & Black Edition",
-        bike_2_name: "Honda AirBlade 2018 - Black & Gold Edition",
+        bike_2_name: "Honda AirBlade 2012 - White & Black Edition",
         bike_3_name: "Yamaha NVX",
         price_day: "/ day",
         spec_gas: "Fuel efficient",
@@ -79,7 +79,7 @@ const translations = {
         explore_desc: "Unmissable destinations with your bike",
         dest_1_name: "Red Sand Dunes",
         dest_1_desc: "Exciting sand sliding experience.",
-        dest_2_name: "Mui Ne Beach",
+        dest_2_name: "Hon Rom Beach",
         dest_2_desc: "Blue sea and poetic coconut groves.",
         dest_3_name: "Bau Trang (White Sand Dunes)",
         dest_3_desc: "The most beautiful coastal road in Vietnam.",
@@ -109,7 +109,7 @@ const translations = {
         services_title: "Наш Автопарк",
         services_desc: "Разнообразие скутеров от эконом до премиум класса",
         bike_1_name: "Honda AirBlade 2012 - Красно-черная версия",
-        bike_2_name: "Honda AirBlade 2018 - Черно-золотая версия",
+        bike_2_name: "Honda AirBlade 2012 - Бело-черная версия",
         bike_3_name: "Yamaha NVX",
         price_day: "/ день",
         spec_gas: "Экономичный",
@@ -123,8 +123,8 @@ const translations = {
         explore_desc: "Места, которые нельзя пропустить",
         dest_1_name: "Красные дюны",
         dest_1_desc: "Захватывающий опыт катания на песке.",
-        dest_2_name: "Пляж Муйне",
-        dest_2_desc: "Синее море и поэтичные кокосовые рощи.",
+        dest_2_name: "Пляж Хон Ром",
+        dest_2_desc: "Голубое море и поэтичные кокосовые рощи.",
         dest_3_name: "Белые дюны (Bau Trang)",
         dest_3_desc: "Самая красивая прибрежная дорога во Вьетнаме.",
         footer_desc: "Сопровождаем вас на каждой дороге в Фантьете - Муйне. Надежный, качественный сервис.",
@@ -153,7 +153,7 @@ const translations = {
         services_title: "我们的车队",
         services_desc: "从经济型到豪华型的各种踏板车",
         bike_1_name: "本田 AirBlade 2012 - 红黑版",
-        bike_2_name: "本田 AirBlade 2018 - 黑金版",
+        bike_2_name: "本田 AirBlade 2012 - 白黑版",
         bike_3_name: "雅马哈 NVX",
         price_day: "/ 天",
         spec_gas: "省油",
@@ -167,7 +167,7 @@ const translations = {
         explore_desc: "骑行不可错过的目的地",
         dest_1_name: "红沙丘",
         dest_1_desc: "刺激的滑沙体验。",
-        dest_2_name: "美奈海滩",
+        dest_2_name: "Hon Rom 海滩",
         dest_2_desc: "碧海和诗意的椰林。",
         dest_3_name: "白沙丘 (Bau Trang)",
         dest_3_desc: "越南最美的沿海公路。",
@@ -274,3 +274,76 @@ window.addEventListener('DOMContentLoaded', () => {
     const savedLang = localStorage.getItem('preferredLayout') || 'vi';
     switchLanguage(savedLang);
 });
+
+/* Product Modal Logic */
+const bikeData = {
+    1: {
+        img: 'assets/images/ab1.jpeg', // Placeholder 
+        name_key: 'bike_1_name',
+        price: '150.000đ',
+        specs: [
+            { icon: 'fas fa-gas-pump', text_key: 'spec_gas' },
+            { icon: 'fas fa-suitcase', text_key: 'spec_trunk' },
+            { icon: 'fas fa-motorcycle', text_key: 'feat_1' }
+        ]
+    },
+    2: {
+        img: 'assets/images/ab2.jpeg',
+        name_key: 'bike_2_name',
+        price: '150.000đ',
+        specs: [
+            { icon: 'fas fa-tachometer-alt', text_key: 'spec_engine' },
+            { icon: 'fas fa-user-friends', text_key: 'spec_comfort' },
+            { icon: 'fas fa-shield-alt', text_key: 'feat_3' }
+        ]
+    }
+};
+
+function openProductModal(id) {
+    const data = bikeData[id];
+    if (!data) return;
+
+    const lang = localStorage.getItem('preferredLayout') || 'vi';
+    const t = translations[lang];
+
+    const imgEl = document.getElementById('modal-img');
+    if (imgEl) imgEl.src = data.img;
+
+    const titleEl = document.getElementById('modal-title');
+    if (titleEl) {
+        titleEl.textContent = t[data.name_key] || data.name_key;
+        titleEl.setAttribute('data-i18n', data.name_key);
+    }
+
+    const priceEl = document.getElementById('modal-price');
+    if (priceEl && t['price_day']) {
+        priceEl.innerHTML = `${data.price} <span data-i18n="price_day">${t['price_day']}</span>`;
+    }
+
+    const specsContainer = document.getElementById('modal-specs');
+    if (specsContainer) {
+        specsContainer.innerHTML = '';
+        data.specs.forEach(spec => {
+            const div = document.createElement('div');
+            div.innerHTML = `<i class="${spec.icon}"></i> <span data-i18n="${spec.text_key}">${t[spec.text_key] || spec.text_key}</span>`;
+            specsContainer.appendChild(div);
+        });
+    }
+
+    const modal = document.getElementById('product-modal');
+    if (modal) modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeProductModal() {
+    const modal = document.getElementById('product-modal');
+    if (modal) modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+const productModal = document.getElementById('product-modal');
+if (productModal) {
+    productModal.addEventListener('click', function (e) {
+        if (e.target === this) closeProductModal();
+    });
+}
