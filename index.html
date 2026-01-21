@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xe Máy Ngọc Mười | Thuê Xe Phan Thiết - Mũi Né</title>
+    <meta name="description"
+        content="Dịch vụ cho thuê xe tay ga uy tín tại Phan Thiết - Mũi Né. Khám phá vẻ đẹp Bình Thuận với Xe Máy Ngọc Mười.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@1,400;1,700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Xe Máy Ngọc Mười Logo">
+            </a>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#home" class="active" data-i18n="nav_home">Trang Chủ</a></li>
+                    <li><a href="#about" data-i18n="nav_about">Về Chúng Tôi</a></li>
+                    <li><a href="#services" data-i18n="nav_services">Dòng Xe</a></li>
+                    <li><a href="#explore" data-i18n="nav_explore">Khám Phá</a></li>
+                    <li class="language-dropdown">
+                        <a href="javascript:void(0)" class="lang-toggle" id="lang-toggle">
+                            <span id="current-lang-display"></span> <i class="fas fa-chevron-down"></i>
+                        </a>
+                        <ul class="lang-menu">
+                            <li><a href="javascript:void(0)" onclick="switchLanguage('vi')"><img
+                                        src="assets/images/vietnam.png" class="lang-flag" alt="VI"> VI</a></li>
+                            <li><a href="javascript:void(0)" onclick="switchLanguage('en')"><img
+                                        src="assets/images/usa.png" class="lang-flag" alt="EN"> EN</a></li>
+                            <li><a href="javascript:void(0)" onclick="switchLanguage('ru')"><img
+                                        src="assets/images/russia.png" class="lang-flag" alt="RU"> RU</a></li>
+                            <li><a href="javascript:void(0)" onclick="switchLanguage('zh')"><img
+                                        src="assets/images/china.png" class="lang-flag" alt="ZH"> ZH</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact" class="btn-primary" data-i18n="nav_contact">Liên Hệ</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu Overlay -->
+        <div class="mobile-nav" id="mobile-nav">
+            <button class="close-menu-btn" id="close-menu-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="assets/images/logo.png" class="mobile-nav-logo" alt="Xe Máy Ngọc Mười">
+            <ul>
+                <li><a href="#home" onclick="closeMenu()" data-i18n="nav_home">Trang Chủ</a></li>
+                <li><a href="#about" onclick="closeMenu()" data-i18n="nav_about">Về Chúng Tôi</a></li>
+                <li><a href="#services" onclick="closeMenu()" data-i18n="nav_services">Dòng Xe</a></li>
+                <li><a href="#explore" onclick="closeMenu()" data-i18n="nav_explore">Khám Phá</a></li>
+                <li class="mobile-lang-item">
+                    <a href="javascript:void(0)" class="mobile-lang-toggle" onclick="toggleMobileLangMenu()">
+                        <span data-i18n="nav_language">Ngôn Ngữ</span> <i class="fas fa-chevron-down"
+                            id="mobile-lang-arrow"></i>
+                    </a>
+                    <ul class="mobile-lang-dropdown" id="mobile-lang-dropdown" style="display: none;">
+                        <li><a href="javascript:void(0)" onclick="switchLanguage('vi')"><img
+                                    src="assets/images/vietnam.png" class="lang-flag" alt="VI"> Tiếng Việt</a></li>
+                        <li><a href="javascript:void(0)" onclick="switchLanguage('en')"><img src="assets/images/usa.png"
+                                    class="lang-flag" alt="EN"> English</a></li>
+                        <li><a href="javascript:void(0)" onclick="switchLanguage('ru')"><img
+                                    src="assets/images/russia.png" class="lang-flag" alt="RU"> Русский</a></li>
+                        <li><a href="javascript:void(0)" onclick="switchLanguage('zh')"><img
+                                    src="assets/images/china.png" class="lang-flag" alt="ZH"> 中文</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact" onclick="closeMenu()" data-i18n="nav_contact">Liên Hệ</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <span class="hero-subtitle" data-i18n="hero_subtitle">Chào mừng đến với <br class="mobile-break"> Phan Thiết
+                - Mũi Né</span>
+            <h1 class="hero-title" data-i18n="hero_title">Hành Trình Tự Do Cùng <br> <span class="text-gold">Xe Máy Ngọc
+                    Mười</span></h1>
+            <p class="hero-desc" data-i18n="hero_desc">Dịch vụ cho thuê xe tay ga cao cấp, uy tín. Khám phá cung đường
+                biển đẹp nhất Việt Nam
+                theo cách riêng của bạn.</p>
+            <div class="hero-buttons">
+                <a href="tel:0919441908" class="btn-primary btn-lg" data-i18n="hero_btn_call"><i
+                        class="fas fa-phone-alt"></i> Gọi Ngay</a>
+                <a href="#services" class="btn-outline btn-lg" data-i18n="hero_btn_view">Xem Xe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container about-grid">
+            <div class="about-image">
+                <!-- Placeholder for about image, maybe generated later -->
+                <div class="image-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+            </div>
+            <div class="about-text">
+                <h2 class="section-title" data-i18n="about_title">Tại Sao Chọn Chúng Tôi?</h2>
+                <p data-i18n="about_desc">Xe Máy Ngọc Mười tự hào là đơn vị cung cấp dịch vụ thuê xe máy hàng đầu tại
+                    Phan Thiết - Mũi Né.
+                    Chúng
+                    tôi mang đến những chiếc xe mới nhất, bảo dưỡng định kỳ để đảm bảo an toàn tuyệt đối cho chuyến đi
+                    của
+                    bạn.</p>
+                <ul class="features-list">
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feat_1">Xe đời mới, vận hành êm ái.</span>
+                    </li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feat_2">Giao xe tận nơi khách
+                            sạn/resort.</span></li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feat_3">Hỗ trợ nón bảo hiểm, áo mưa.</span>
+                    </li>
+                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feat_4">Thủ tục đơn giản, nhanh
+                            chóng.</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services / Fleet Section -->
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title" data-i18n="services_title">Đội Xe Của Chúng Tôi</h2>
+                <p class="section-desc" data-i18n="services_desc">Đa dạng các dòng xe tay ga từ bình dân đến cao cấp</p>
+            </div>
+            <div class="fleet-grid">
+                <!-- Bike Card 1 -->
+                <div class="bike-card" onclick="openProductModal(1)" style="cursor: pointer;">
+                    <div class="bike-image-container">
+                        <img src="assets/images/ab1.jpeg" alt="Honda AirBlade" class="bike-img">
+                    </div>
+                    <div class="bike-info">
+                        <h3 data-i18n="bike_1_name">Honda AirBlade 2012 - Phiên bản đỏ đen</h3>
+                        <p class="bike-price">120.000đ <span data-i18n="price_day">/ ngày</span></p>
+                        <ul class="bike-specs">
+                            <li><i class="fas fa-gas-pump"></i> <span data-i18n="spec_gas">Tiết kiệm xăng</span></li>
+                            <li><i class="fas fa-suitcase"></i> <span data-i18n="spec_trunk">Cốp rộng</span></li>
+                        </ul>
+                        <a href="tel:0919441908" class="btn-block" data-i18n="btn_book">Đặt Xe</a>
+                    </div>
+                </div>
+                <!-- Bike Card 2 -->
+                <div class="bike-card" onclick="openProductModal(2)" style="cursor: pointer;">
+                    <div class="bike-image-container">
+                        <img src="assets/images/ab2.jpeg" alt="Honda AirBlade" class="bike-img">
+                    </div>
+                    <div class="bike-info">
+                        <h3 data-i18n="bike_2_name">Honda AirBlade 2018 - Phiên bản đen vàng</h3>
+                        <p class="bike-price">150.000đ <span data-i18n="price_day"></span></span></p>
+                        <ul class="bike-specs">
+                            <li><i class="fas fa-tachometer-alt"></i> <span data-i18n="spec_engine">Động cơ mạnh</span>
+                            </li>
+                            <li><i class="fas fa-user-friends"></i> <span data-i18n="spec_comfort">Thoải mái 2
+                                    người</span></li>
+                        </ul>
+                        <a href="tel:0919441908" class="btn-block" data-i18n="btn_book">Đặt Xe</a>
+                    </div>
+                </div>
+                <!-- Bike Card 3 -->
+                <!-- <div class="bike-card">
+                    <div class="bike-image-container">
+                        <img src="assets/images/ab1.jpeg" alt="Honda AirBlade" class="bike-img">
+                    </div>
+                    <div class="bike-info">
+                        <h3 data-i18n="bike_3_name">Yamaha NVX</h3>
+                        <p class="bike-price">180.000đ <span data-i18n="price_day">/ ngày</span></p>
+                        <ul class="bike-specs">
+                            <li><i class="fas fa-bolt"></i> <span data-i18n="spec_sport">Thể thao</span></li>
+                            <li><i class="fas fa-road"></i> <span data-i18n="spec_grip">Bám đường tốt</span></li>
+                        </ul>
+                        <a href="tel:0919441908" class="btn-block" data-i18n="btn_book">Đặt Xe</a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Phan Thiet Section -->
+    <section id="explore" class="section explore-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title" data-i18n="explore_title">Khám Phá Phan Thiết - Mũi Né</h2>
+                <p class="section-desc" data-i18n="explore_desc">Những điểm đến không thể bỏ lỡ cùng chiếc xe của bạn
+                </p>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="dest-img-placeholder" style="background: linear-gradient(45deg, #FFD700, #FF8C00);">
+                    </div>
+                    <div class="dest-info">
+                        <h3 data-i18n="dest_1_name">Đồi Cát Bay</h3>
+                        <p data-i18n="dest_1_desc">Trải nghiệm trượt cát đầy thú vị.</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="dest-img-placeholder" style="background: linear-gradient(45deg, #00BFFF, #1E90FF);">
+                    </div>
+                    <div class="dest-info">
+                        <h3 data-i18n="dest_2_name">Mũi Né</h3>
+                        <p data-i18n="dest_2_desc">Bãi biển xanh и hàng dừa thơ mộng.</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="dest-img-placeholder" style="background: linear-gradient(45deg, #32CD32, #228B22);">
+                    </div>
+                    <div class="dest-info">
+                        <h3 data-i18n="dest_3_name">Bàu Trắng</h3>
+                        <p data-i18n="dest_3_desc">Cung đường ven biển đẹp nhất Việt Nam.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <img src="assets/images/logo.png" alt="Xe Máy Ngọc Mười" class="footer-logo">
+                <p data-i18n="footer_desc">Đồng hành cùng bạn trên mọi nẻo đường Phan Thiết - Mũi Né. Dịch vụ uy tín,
+                    tận tâm, chất lượng.</p>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer_contact">Liên Hệ</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> <a
+                            href="https://www.google.com/maps/place/133+Nguy%E1%BB%85n+%C4%90%C3%ACnh+Chi%E1%BB%83u,+Ph%C6%B0%E1%BB%9Dng+H%C3%A0m+Ti%E1%BA%BFn,+Th%C3%A0nh+ph%E1%BB%91+Phan+Thi%E1%BA%BFt,+B%C3%ACnh+Thu%E1%BA%ADn,+Vi%E1%BB%87t+Nam/@10.952808,108.2113489,17z/data=!3m1!4b1!4m6!3m5!1s0x31768537d841c8b1:0x821c66219e77412e!8m2!3d10.952808!4d108.2139238!16s%2Fg%2F11knl4v7yf?entry=ttu&g_ep=EgoyMDI2MDExOS4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank" style="color: inherit; text-decoration: none;">133 Nguyễn Đình Chiểu, P. Hàm
+                            Tiến, TP. Phan Thiết, Bình Thuận</a></li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:0919441908"
+                            style="color: inherit; text-decoration: none;">0919 441 908</a></li>
+                    <li><i class="fas fa-envelope"></i> xemayngocmuoi@gmail.com</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3 data-i18n="footer_follow">Theo Dõi</h3>
+                <div class="social-links">
+                    <a href="https://web.facebook.com/xemayngocmuoi"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p data-i18n="footer_copyright">&copy; 2026 Xe Máy Ngọc Mười. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div id="product-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeProductModal()">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="Bike Image">
+                </div>
+                <div class="modal-info">
+                    <h3 id="modal-title" class="modal-title"></h3>
+                    <p id="modal-price" class="modal-price"></p>
+                    <div id="modal-specs" class="modal-specs-list"></div>
+                    <p id="modal-desc" class="modal-desc"></p>
+                    <a href="tel:0919441908" class="btn-primary btn-block" data-i18n="btn_book">Đặt Xe Ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
