@@ -819,14 +819,16 @@ header.scrolled .mobile-menu-btn {
 
     .hero-title {
         font-size: 1.8rem;
-        /* Reduced from 2.5rem */
+        margin-top: 50px;
     }
 
     .hero-subtitle {
+        margin-top: -120px;
         font-size: 0.9rem;
     }
 
     .hero-desc {
+        margin-top: 60px;
         font-size: 0.95rem;
     }
 
@@ -835,6 +837,7 @@ header.scrolled .mobile-menu-btn {
         width: 100%;
         max-width: 300px;
         margin: 0 auto;
+        margin-top: 80px;
     }
 
     .btn-lg {
