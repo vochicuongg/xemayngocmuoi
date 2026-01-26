@@ -22,7 +22,9 @@ const translations = {
         services_desc: "Đa dạng các dòng xe tay ga từ bình dân đến cao cấp",
         bike_1_name: "Honda AirBlade 2012 - Phiên bản đỏ đen",
         bike_2_name: "Honda AirBlade 2012 - Phiên bản trắng đen",
-        bike_3_name: "Yamaha NVX",
+        bike_3_name: "Yamaha Nouvo 6 - Phiên bản trắng",
+        bike_4_name: "Honda Vision 2014 - Phiên bản đỏ",
+
         price_day: "/ ngày",
         spec_gas: "Tiết kiệm xăng",
         spec_trunk: "Cốp rộng",
@@ -39,10 +41,22 @@ const translations = {
         dest_2_desc: "Bãi biển xanh thơ mộng.",
         dest_3_name: "Bàu Trắng",
         dest_3_desc: "Cung đường ven biển đẹp nhất Việt Nam.",
+        dest_4_name: "Bãi Đá Ông Địa",
+        dest_4_desc: "Check-in sống ảo cực chất.",
+        dest_addr_1: "01 Hòn Rơm, ĐT716, Mũi Né, Phan Thiết",
+        dest_addr_2: "Xuân Thủy, Mũi Né, Phan Thiết",
+        dest_addr_3: "Hòa Thắng - Hòa Phú, Bắc Bình, Bình Thuận",
+        dest_addr_4: "Nguyễn Đình Chiểu, Hàm Tiến, Phan Thiết",
+        btn_map: "Xem Bản Đồ",
+        map_title: "Địa Chỉ Của Chúng Tôi",
         footer_desc: "Đồng hành cùng bạn trên mọi nẻo đường Phan Thiết - Mũi Né. Dịch vụ uy tín, tận tâm, chất lượng.",
         footer_contact: "Liên Hệ",
         footer_follow: "Theo Dõi",
-        footer_copyright: "&copy; 2026 Xe Máy Ngọc Mười. All rights reserved."
+        footer_copyright: "&copy; 2026 Xe Máy Ngọc Mười. All rights reserved.",
+        hero_btn: "Đặt Xe Ngay",
+        contact_title: "Liên Hệ Với Chúng Tôi",
+        btn_call: "Gọi Điện Thoại",
+        btn_whatsapp: "Chat WhatsApp"
     },
     en: {
         nav_home: "Home",
@@ -66,7 +80,8 @@ const translations = {
         services_desc: "A variety of scooters from budget to premium",
         bike_1_name: "Honda AirBlade 2012 - Red & Black Edition",
         bike_2_name: "Honda AirBlade 2012 - White & Black Edition",
-        bike_3_name: "Yamaha NVX",
+        bike_3_name: "Yamaha Nouvo 6 - White Edition",
+        bike_4_name: "Honda Vision 2014 - Red Edition",
         price_day: "/ day",
         spec_gas: "Fuel efficient",
         spec_trunk: "Large trunk",
@@ -83,10 +98,22 @@ const translations = {
         dest_2_desc: "Blue sea and poetic coconut groves.",
         dest_3_name: "Bau Trang (White Sand Dunes)",
         dest_3_desc: "The most beautiful coastal road in Vietnam.",
+        dest_4_name: "Ong Dia Rock Beach",
+        dest_4_desc: "Great spot for photos.",
+        dest_addr_1: "01 Hon Rom, DT716, Mui Ne, Phan Thiet",
+        dest_addr_2: "Xuan Thuy, Mui Ne, Phan Thiet",
+        dest_addr_3: "Hoa Thang - Hoa Phu, Bac Binh, Binh Thuan",
+        dest_addr_4: "Nguyen Dinh Chieu, Ham Tien, Phan Thiet",
+        btn_map: "View On Map",
+        map_title: "Our Address",
         footer_desc: "Accompanying you on every road in Phan Thiet - Mui Ne. Reliable, dedicated, quality service.",
         footer_contact: "Contact",
         footer_follow: "Follow Us",
-        footer_copyright: "&copy; 2026 Ngoc Muoi Motorbikes. All rights reserved."
+        footer_copyright: "&copy; 2026 Ngoc Muoi Motorbikes. All rights reserved.",
+        hero_btn: "Book Now",
+        contact_title: "Contact Us",
+        btn_call: "Call Us",
+        btn_whatsapp: "Chat on WhatsApp"
     },
     ru: {
         nav_home: "Главная",
@@ -110,7 +137,8 @@ const translations = {
         services_desc: "Разнообразие скутеров от эконом до премиум класса",
         bike_1_name: "Honda AirBlade 2012 - Красно-черная версия",
         bike_2_name: "Honda AirBlade 2012 - Бело-черная версия",
-        bike_3_name: "Yamaha NVX",
+        bike_3_name: "Yamaha Nouvo 6 - Белая версия",
+        bike_4_name: "Honda Vision 2014 - Красная версия",
         price_day: "/ день",
         spec_gas: "Экономичный",
         spec_trunk: "Большой багажник",
@@ -127,10 +155,23 @@ const translations = {
         dest_2_desc: "Голубое море и поэтичные кокосовые рощи.",
         dest_3_name: "Белые дюны (Bau Trang)",
         dest_3_desc: "Самая красивая прибрежная дорога во Вьетнаме.",
+        dest_4_name: "Пляж Онг Диа (Ong Dia Rock)",
+        dest_4_desc: "Отличное место для фото.",
+        dest_addr_1: "01 Хон Ром, DT716, Муйне, Фантьет",
+        dest_addr_2: "Сюань Туй, Муйне, Фантьет",
+        dest_addr_3: "Хоа Тханг - Хоа Фу, Бак Бинь, Бинь Туан",
+        dest_addr_3: "Хоа Тханг - Хоа Фу, Бак Бинь, Бинь Туан",
+        dest_addr_4: "Нгуен Динь Чиеу, Хам Тьен, Фантьет",
+        btn_map: "Посмотреть на карте",
+        map_title: "Наш адрес",
         footer_desc: "Сопровождаем вас на каждой дороге в Фантьете - Муйне. Надежный, качественный сервис.",
         footer_contact: "Контакты",
         footer_follow: "Подписаться",
-        footer_copyright: "&copy; 2026 Ngoc Muoi Motorbikes. Все права защищены."
+        footer_copyright: "&copy; 2026 Ngoc Muoi Motorbikes. Все права защищены.",
+        hero_btn: "Забронировать сейчас",
+        contact_title: "Свяжитесь с нами",
+        btn_call: "Позвонить",
+        btn_whatsapp: "Чат в WhatsApp"
     },
     zh: {
         nav_home: "首页",
@@ -154,7 +195,8 @@ const translations = {
         services_desc: "从经济型到豪华型的各种踏板车",
         bike_1_name: "本田 AirBlade 2012 - 红黑版",
         bike_2_name: "本田 AirBlade 2012 - 白黑版",
-        bike_3_name: "雅马哈 NVX",
+        bike_3_name: "雅马哈 Nouvo 6 - 白色版",
+        bike_4_name: "本田 Vision 2014 - 红色版",
         price_day: "/ 天",
         spec_gas: "省油",
         spec_trunk: "大后备箱",
@@ -171,10 +213,23 @@ const translations = {
         dest_2_desc: "碧海和诗意的椰林。",
         dest_3_name: "白沙丘 (Bau Trang)",
         dest_3_desc: "越南最美的沿海公路。",
+        dest_4_name: "翁地亚岩石海滩 (Ong Dia Rock)",
+        dest_4_desc: "很棒的拍照地点。",
+        dest_addr_1: "01 Hon Rom, DT716, Mui Ne, Phan Thiet",
+        dest_addr_2: "Xuan Thuy, Mui Ne, Phan Thiet",
+        dest_addr_3: "Hoa Thang - Hoa Phu, Bac Binh, Binh Thuan",
+        dest_addr_3: "Hoa Thang - Hoa Phu, Bac Binh, Binh Thuan",
+        dest_addr_4: "Nguyen Dinh Chieu, Ham Tien, Phan Thiet",
+        btn_map: "查看地图",
+        map_title: "我们的地址",
         footer_desc: "在潘切-美奈的每一条道路上陪伴您。可靠、敬业、优质的服务。",
         footer_contact: "联系方式",
         footer_follow: "关注我们",
-        footer_copyright: "&copy; 2026 Ngoc Muoi Motorbikes. 保留所有权利。"
+        footer_copyright: "&copy; 2026 Ngoc Muoi Motorbikes. 保留所有权利。",
+        hero_btn: "立即预订",
+        contact_title: "联系我们",
+        btn_call: "致电",
+        btn_whatsapp: "WhatsApp 聊天"
     }
 };
 
@@ -196,13 +251,13 @@ function switchLanguage(lang) {
     // Update Dropdown Label
     const currentLangDisplay = document.getElementById('current-lang-display');
     const flagMap = {
-        'vi': 'vietnam.png',
-        'en': 'usa.png',
-        'ru': 'russia.png',
-        'zh': 'china.png'
+        'vi': 'vietnam.webp',
+        'en': 'usa.webp',
+        'ru': 'russia.webp',
+        'zh': 'china.webp'
     };
     if (currentLangDisplay && flagMap[lang]) {
-        currentLangDisplay.innerHTML = `<img src="assets/images/${flagMap[lang]}" class="lang-flag" alt="${lang.toUpperCase()}">`;
+        currentLangDisplay.innerHTML = `<img src="assets/images/languages/${flagMap[lang]}" class="lang-flag" alt="${lang.toUpperCase()}">`;
     }
 
     // Highlight active language in mobile dropdown
@@ -278,7 +333,7 @@ window.addEventListener('DOMContentLoaded', () => {
 /* Product Modal Logic */
 const bikeData = {
     1: {
-        img: 'assets/images/ab1.jpeg', // Placeholder 
+        img: 'assets/images/products/ab1.webp', // Placeholder 
         name_key: 'bike_1_name',
         price: '150.000đ',
         specs: [
@@ -288,13 +343,33 @@ const bikeData = {
         ]
     },
     2: {
-        img: 'assets/images/ab2.jpeg',
+        img: 'assets/images/products/ab2.webp',
         name_key: 'bike_2_name',
         price: '150.000đ',
         specs: [
             { icon: 'fas fa-tachometer-alt', text_key: 'spec_engine' },
             { icon: 'fas fa-user-friends', text_key: 'spec_comfort' },
             { icon: 'fas fa-shield-alt', text_key: 'feat_3' }
+        ]
+    },
+    3: {
+        img: 'assets/images/products/nouvo-6.webp',
+        name_key: 'bike_3_name',
+        price: '150.000đ',
+        specs: [
+            { icon: 'fas fa-bolt', text_key: 'spec_sport' },
+            { icon: 'fas fa-road', text_key: 'spec_grip' },
+            { icon: 'fas fa-motorcycle', text_key: 'feat_1' }
+        ]
+    },
+    4: {
+        img: 'assets/images/products/vision-do.webp',
+        name_key: 'bike_4_name',
+        price: '150.000đ',
+        specs: [
+            { icon: 'fas fa-leaf', text_key: 'spec_gas' },
+            { icon: 'fas fa-female', text_key: 'spec_comfort' },
+            { icon: 'fas fa-shopping-bag', text_key: 'spec_trunk' }
         ]
     }
 };
@@ -344,6 +419,251 @@ function closeProductModal() {
 const productModal = document.getElementById('product-modal');
 if (productModal) {
     productModal.addEventListener('click', function (e) {
-        if (e.target === this) closeProductModal();
     });
 }
+
+/* Back to Top Button Logic */
+const backToTopBtn = document.getElementById('back-to-top');
+
+if (backToTopBtn) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopBtn.classList.add('show');
+        } else {
+            backToTopBtn.classList.remove('show');
+        }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+/* Contact Modal Logic */
+function openContactModal() {
+    const modal = document.getElementById('contact-modal');
+    if (modal) modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeContactModal() {
+    const modal = document.getElementById('contact-modal');
+    if (modal) modal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+// Close modal when clicking outside
+const contactModal = document.getElementById('contact-modal');
+if (contactModal) {
+    contactModal.addEventListener('click', function (e) {
+        if (e.target === this) closeContactModal();
+    });
+}
+
+/* Explore Modal Logic */
+const destData = {
+    1: {
+        img: 'assets/images/locations/doi-cat-bay.webp',
+        name_key: 'dest_1_name',
+        desc_key: 'dest_1_desc',
+        addr_key: 'dest_addr_1',
+        map_link: 'https://maps.google.com/?q=Red+Sand+Dunes+Mui+Ne'
+    },
+    2: {
+        img: 'assets/images/locations/bien-hon-rom.webp',
+        name_key: 'dest_2_name',
+        desc_key: 'dest_2_desc',
+        addr_key: 'dest_addr_2',
+        map_link: 'https://maps.google.com/?q=Hon+Rom+Beach+Phan+Thiet'
+    },
+    3: {
+        img: 'assets/images/locations/bau-trang.webp',
+        name_key: 'dest_3_name',
+        desc_key: 'dest_3_desc',
+        addr_key: 'dest_addr_3',
+        map_link: 'https://maps.google.com/?q=Bau+Trang+White+Sand+Dunes'
+    },
+    4: {
+        img: 'assets/images/locations/da-ong-dia.webp',
+        name_key: 'dest_4_name',
+        desc_key: 'dest_4_desc',
+        addr_key: 'dest_addr_4',
+        map_link: 'https://maps.google.com/?q=Bai+Da+Ong+Dia+Phan+Thiet'
+    }
+};
+
+function openExploreModal(id) {
+    const data = destData[id];
+    if (!data) return;
+
+    const lang = localStorage.getItem('preferredLayout') || 'vi';
+    const t = translations[lang];
+
+    const imgEl = document.getElementById('explore-img');
+    if (imgEl) imgEl.src = data.img;
+
+    const titleEl = document.getElementById('explore-title');
+    if (titleEl) {
+        titleEl.textContent = t[data.name_key] || data.name_key;
+        titleEl.setAttribute('data-i18n', data.name_key);
+    }
+
+    const descEl = document.getElementById('explore-desc');
+    if (descEl) {
+        descEl.textContent = t[data.desc_key] || data.desc_key;
+        descEl.setAttribute('data-i18n', data.desc_key);
+    }
+
+    const addrEl = document.getElementById('explore-addr');
+    if (addrEl && data.addr_key) {
+        addrEl.innerHTML = `<i class="fas fa-map-marker-alt"></i> <span data-i18n="${data.addr_key}">${t[data.addr_key]}</span>`;
+    }
+
+    const mapBtn = document.getElementById('explore-map-btn');
+    if (mapBtn) {
+        mapBtn.href = data.map_link;
+        const span = mapBtn.querySelector('span');
+        if (span) span.textContent = t['btn_map'];
+    }
+
+    const modal = document.getElementById('explore-modal');
+    if (modal) modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeExploreModal() {
+    const modal = document.getElementById('explore-modal');
+    if (modal) modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+const exploreModal = document.getElementById('explore-modal');
+if (exploreModal) {
+    exploreModal.addEventListener('click', function (e) {
+        if (e.target === this) closeExploreModal();
+    });
+}
+
+/* Product Carousel Logic */
+
+/* Generic Carousel Logic */
+function setupSlider(trackId, prevBtnId, nextBtnId) {
+    const track = document.getElementById(trackId);
+    const prevBtn = document.getElementById(prevBtnId);
+    const nextBtn = document.getElementById(nextBtnId);
+
+    if (!track || !prevBtn || !nextBtn) return;
+
+    let currentIndex = 0;
+    const gap = 30; // Matches CSS gap
+
+    function getItemsVisible() {
+        if (window.innerWidth <= 600) return 1;
+        if (window.innerWidth <= 991) return 2;
+        return 3;
+    }
+
+    function updateSlider() {
+        const items = track.children;
+        const totalItems = items.length;
+        const itemsVisible = getItemsVisible();
+        // Allow index to go up to totalItems for wrap-around calculation, but clamp for display
+
+        // Ensure index bounds for standard display
+        // With infinite loop, index logic changes slightly, but for simple slide:
+        // We will just loop currentIndex logic in button handlers.
+
+        // Recalculate maxIndex just to be safe for current layout
+        const maxIndex = Math.max(0, totalItems - itemsVisible);
+
+        // Force bounds if resized
+        if (currentIndex > maxIndex) currentIndex = maxIndex;
+        if (currentIndex < 0) currentIndex = 0;
+
+        // Get card width dynamically
+        if (items.length > 0) {
+            const cardWidth = items[0].getBoundingClientRect().width;
+            const moveAmount = (cardWidth + gap) * currentIndex;
+            track.style.transform = `translateX(-${moveAmount}px)`;
+        }
+
+        // Update Button States - Always active for infinite loop
+        prevBtn.classList.remove('disabled');
+        nextBtn.classList.remove('disabled');
+    }
+
+    nextBtn.addEventListener('click', () => {
+        const itemsVisible = getItemsVisible();
+        const maxIndex = Math.max(0, track.children.length - itemsVisible); // Ensure maxIndex >= 0
+
+        if (currentIndex < maxIndex) {
+            currentIndex++;
+        } else {
+            // Loop back to start
+            currentIndex = 0;
+        }
+        updateSlider();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        const itemsVisible = getItemsVisible();
+        const maxIndex = Math.max(0, track.children.length - itemsVisible);
+
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            // Loop to end
+            currentIndex = maxIndex;
+        }
+        updateSlider();
+    });
+
+    // Touch Events for Mobile Swipe
+    let touchStartX = 0;
+    let touchEndX = 0;
+    const minSwipeDistance = 50;
+
+    track.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    track.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, { passive: true });
+
+    function handleSwipe() {
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > minSwipeDistance) {
+            if (diff > 0) {
+                // Swipe Left -> Next
+                nextBtn.click();
+            } else {
+                // Swipe Right -> Prev
+                prevBtn.click();
+            }
+        }
+    }
+
+    // Check bounds on resize
+    window.addEventListener('resize', () => {
+        const itemsVisible = getItemsVisible();
+        const maxIndex = Math.max(0, track.children.length - itemsVisible);
+        if (currentIndex > maxIndex) currentIndex = maxIndex;
+        updateSlider();
+    });
+
+    // Initial check
+    setTimeout(updateSlider, 100);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Init Fleet Slider
+    setupSlider('slider-track', 'slider-prev', 'slider-next');
+
+    // Init Explore Slider
+    setupSlider('explore-track', 'explore-prev', 'explore-next');
+});

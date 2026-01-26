@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
- 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +15,7 @@
         rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/images/logo/favicon.webp">
 </head>
 
 <body>
@@ -23,7 +24,7 @@
     <header id="header">
         <div class="container header-container">
             <a href="index.html" class="logo">
-                <img src="assets/images/logo.png" alt="Xe Máy Ngọc Mười Logo">
+                <img src="assets/images/logo/logo.webp" alt="Xe Máy Ngọc Mười Logo">
             </a>
             <nav class="desktop-nav">
                 <ul>
@@ -37,13 +38,15 @@
                         </a>
                         <ul class="lang-menu">
                             <li><a href="javascript:void(0)" onclick="switchLanguage('vi')"><img
-                                        src="assets/images/vietnam.png" class="lang-flag" alt="VI"> VI</a></li>
+                                        src="assets/images/languages/vietnam.webp" class="lang-flag" alt="VI"> VI</a>
+                            </li>
                             <li><a href="javascript:void(0)" onclick="switchLanguage('en')"><img
-                                        src="assets/images/usa.png" class="lang-flag" alt="EN"> EN</a></li>
+                                        src="assets/images/languages/usa.webp" class="lang-flag" alt="EN"> EN</a></li>
                             <li><a href="javascript:void(0)" onclick="switchLanguage('ru')"><img
-                                        src="assets/images/russia.png" class="lang-flag" alt="RU"> RU</a></li>
+                                        src="assets/images/languages/russia.webp" class="lang-flag" alt="RU"> RU</a>
+                            </li>
                             <li><a href="javascript:void(0)" onclick="switchLanguage('zh')"><img
-                                        src="assets/images/china.png" class="lang-flag" alt="ZH"> ZH</a></li>
+                                        src="assets/images/languages/china.webp" class="lang-flag" alt="ZH"> ZH</a></li>
                         </ul>
                     </li>
                     <li><a href="#contact" class="btn-primary" data-i18n="nav_contact">Liên Hệ</a></li>
@@ -58,7 +61,7 @@
             <button class="close-menu-btn" id="close-menu-btn">
                 <i class="fas fa-times"></i>
             </button>
-            <img src="assets/images/logo.png" class="mobile-nav-logo" alt="Xe Máy Ngọc Mười">
+            <img src="assets/images/logo/logo.webp" class="mobile-nav-logo" alt="Xe Máy Ngọc Mười">
             <ul>
                 <li><a href="#home" onclick="closeMenu()" data-i18n="nav_home">Trang Chủ</a></li>
                 <li><a href="#about" onclick="closeMenu()" data-i18n="nav_about">Về Chúng Tôi</a></li>
@@ -71,13 +74,16 @@
                     </a>
                     <ul class="mobile-lang-dropdown" id="mobile-lang-dropdown" style="display: none;">
                         <li><a href="javascript:void(0)" onclick="switchLanguage('vi')"><img
-                                    src="assets/images/vietnam.png" class="lang-flag" alt="VI"> Tiếng Việt</a></li>
-                        <li><a href="javascript:void(0)" onclick="switchLanguage('en')"><img src="assets/images/usa.png"
-                                    class="lang-flag" alt="EN"> English</a></li>
+                                    src="assets/images/languages/vietnam.webp" class="lang-flag" alt="VI"> Tiếng
+                                Việt</a>
+                        </li>
+                        <li><a href="javascript:void(0)" onclick="switchLanguage('en')"><img
+                                    src="assets/images/languages/usa.webp" class="lang-flag" alt="EN"> English</a></li>
                         <li><a href="javascript:void(0)" onclick="switchLanguage('ru')"><img
-                                    src="assets/images/russia.png" class="lang-flag" alt="RU"> Русский</a></li>
+                                    src="assets/images/languages/russia.webp" class="lang-flag" alt="RU"> Русский</a>
+                        </li>
                         <li><a href="javascript:void(0)" onclick="switchLanguage('zh')"><img
-                                    src="assets/images/china.png" class="lang-flag" alt="ZH"> 中文</a></li>
+                                    src="assets/images/languages/china.webp" class="lang-flag" alt="ZH"> 中文</a></li>
                     </ul>
                 </li>
                 <li><a href="#contact" onclick="closeMenu()" data-i18n="nav_contact">Liên Hệ</a></li>
@@ -87,6 +93,7 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+
         <div class="hero-overlay"></div>
         <div class="hero-content container">
             <span class="hero-subtitle" data-i18n="hero_subtitle">Chào mừng đến với <br class="mobile-break"> Phan Thiết
@@ -97,8 +104,8 @@
                 biển đẹp nhất Việt Nam
                 theo cách riêng của bạn.</p>
             <div class="hero-buttons">
-                <a href="tel:0919441908" class="btn-primary btn-lg" data-i18n="hero_btn_call"><i
-                        class="fas fa-phone-alt"></i> Gọi Ngay</a>
+                <a href="#" onclick="openContactModal(); return false;" class="btn-primary btn-lg"
+                    data-i18n="hero_btn_call"><i class="fas fa-phone-alt"></i> Gọi Ngay</a>
                 <a href="#services" class="btn-outline btn-lg" data-i18n="hero_btn_view">Xem Xe</a>
             </div>
         </div>
@@ -107,13 +114,6 @@
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container about-grid">
-            <div class="about-image">
-                <!-- Placeholder for about image, maybe generated later -->
-                <iframe src="https://maps.google.com/maps?q=10.952808,108.2139238&hl=vi&z=17&output=embed" width="100%"
-                    height="100%" style="border:0; min-height: 400px; border-radius: 20px;" allowfullscreen=""
-                    loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
             <div class="about-text">
                 <h2 class="section-title" data-i18n="about_title">Tại Sao Chọn Chúng Tôi?</h2>
                 <p data-i18n="about_desc">Xe Máy Ngọc Mười tự hào là đơn vị cung cấp dịch vụ thuê xe máy hàng đầu tại
@@ -143,54 +143,85 @@
                 <h2 class="section-title" data-i18n="services_title">Đội Xe Của Chúng Tôi</h2>
                 <p class="section-desc" data-i18n="services_desc">Đa dạng các dòng xe tay ga từ bình dân đến cao cấp</p>
             </div>
-            <div class="fleet-grid">
-                <!-- Bike Card 1 -->
-                <div class="bike-card" onclick="openProductModal(1)" style="cursor: pointer;">
-                    <div class="bike-image-container">
-                        <img src="assets/images/ab1.jpeg" alt="Honda AirBlade" class="bike-img">
-                    </div>
-                    <div class="bike-info">
-                        <h3 data-i18n="bike_1_name">Honda AirBlade 2012 - Phiên bản đỏ đen</h3>
-                        <p class="bike-price">150.000đ <span data-i18n="price_day">/ ngày</span></p>
-                        <ul class="bike-specs">
-                            <li><i class="fas fa-gas-pump"></i> <span data-i18n="spec_gas">Tiết kiệm xăng</span></li>
-                            <li><i class="fas fa-suitcase"></i> <span data-i18n="spec_trunk">Cốp rộng</span></li>
-                        </ul>
-                        <a href="tel:0919441908" class="btn-block" data-i18n="btn_book">Đặt Xe</a>
+            <div class="fleet-slider">
+                <button class="slider-arrow prev" id="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-viewport">
+                    <div class="slider-track" id="slider-track">
+                        <!-- Bike Card 1 -->
+                        <div class="bike-card" onclick="openProductModal(1)" style="cursor: pointer;">
+                            <div class="bike-image-container">
+                                <img src="assets/images/products/ab1.webp" alt="Honda AirBlade" class="bike-img">
+                            </div>
+                            <div class="bike-info">
+                                <h3 data-i18n="bike_1_name">Honda AirBlade 2012 - Phiên bản đỏ đen</h3>
+                                <p class="bike-price">150.000đ <span data-i18n="price_day">/ ngày</span></p>
+                                <ul class="bike-specs">
+                                    <li><i class="fas fa-gas-pump"></i> <span data-i18n="spec_gas">Tiết kiệm xăng</span>
+                                    </li>
+                                    <li><i class="fas fa-suitcase"></i> <span data-i18n="spec_trunk">Cốp rộng</span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="btn-block" data-i18n="btn_book"
+                                    onclick="openContactModal(); event.stopPropagation(); return false;">Đặt Xe</a>
+                            </div>
+                        </div>
+                        <!-- Bike Card 2 -->
+                        <div class="bike-card" onclick="openProductModal(2)" style="cursor: pointer;">
+                            <div class="bike-image-container">
+                                <img src="assets/images/products/ab2.webp" alt="Honda AirBlade" class="bike-img">
+                            </div>
+                            <div class="bike-info">
+                                <h3 data-i18n="bike_2_name">Honda AirBlade 2012 - Phiên bản trắng đen</h3>
+                                <p class="bike-price">150.000đ <span data-i18n="price_day"></span></span></p>
+                                <ul class="bike-specs">
+                                    <li><i class="fas fa-tachometer-alt"></i> <span data-i18n="spec_engine">Động cơ
+                                            mạnh</span>
+                                    </li>
+                                    <li><i class="fas fa-user-friends"></i> <span data-i18n="spec_comfort">Thoải mái 2
+                                            người</span></li>
+                                </ul>
+                                <a href="#" class="btn-block" data-i18n="btn_book"
+                                    onclick="openContactModal(); event.stopPropagation(); return false;">Đặt Xe</a>
+                            </div>
+                        </div>
+                        <!-- Bike Card 3 -->
+                        <div class="bike-card" onclick="openProductModal(3)" style="cursor: pointer;">
+                            <div class="bike-image-container">
+                                <img src="assets/images/products/nouvo-6.webp" alt="Yamaha Nouvo 6" class="bike-img">
+                            </div>
+                            <div class="bike-info">
+                                <h3 data-i18n="bike_3_name">Yamaha Nouvo 6</h3>
+                                <p class="bike-price">150.000đ <span data-i18n="price_day">/ ngày</span></p>
+                                <ul class="bike-specs">
+                                    <li><i class="fas fa-bolt"></i> <span data-i18n="spec_sport">Thể thao</span></li>
+                                    <li><i class="fas fa-road"></i> <span data-i18n="spec_grip">Bám đường tốt</span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="btn-block" data-i18n="btn_book"
+                                    onclick="openContactModal(); event.stopPropagation(); return false;">Đặt Xe</a>
+                            </div>
+                        </div>
+                        <!-- Bike Card 4 -->
+                        <div class="bike-card" onclick="openProductModal(4)" style="cursor: pointer;">
+                            <div class="bike-image-container">
+                                <img src="assets/images/products/vision-do.webp" alt="Honda Vision" class="bike-img">
+                            </div>
+                            <div class="bike-info">
+                                <h3 data-i18n="bike_4_name">Honda Vision - Phiên bản đỏ</h3>
+                                <p class="bike-price">150.000đ <span data-i18n="price_day">/ ngày</span></p>
+                                <ul class="bike-specs">
+                                    <li><i class="fas fa-leaf"></i> <span data-i18n="spec_gas">Tiết kiệm xăng</span>
+                                    </li>
+                                    <li><i class="fas fa-female"></i> <span data-i18n="spec_comfort">Thoải mái</span>
+                                    </li>
+                                </ul>
+                                <a href="#" class="btn-block" data-i18n="btn_book"
+                                    onclick="openContactModal(); event.stopPropagation(); return false;">Đặt Xe</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <!-- Bike Card 2 -->
-                <div class="bike-card" onclick="openProductModal(2)" style="cursor: pointer;">
-                    <div class="bike-image-container">
-                        <img src="assets/images/ab2.jpeg" alt="Honda AirBlade" class="bike-img">
-                    </div>
-                    <div class="bike-info">
-                        <h3 data-i18n="bike_2_name">Honda AirBlade 2012 - Phiên bản trắng đen</h3>
-                        <p class="bike-price">150.000đ <span data-i18n="price_day"></span></span></p>
-                        <ul class="bike-specs">
-                            <li><i class="fas fa-tachometer-alt"></i> <span data-i18n="spec_engine">Động cơ mạnh</span>
-                            </li>
-                            <li><i class="fas fa-user-friends"></i> <span data-i18n="spec_comfort">Thoải mái 2
-                                    người</span></li>
-                        </ul>
-                        <a href="tel:0919441908" class="btn-block" data-i18n="btn_book">Đặt Xe</a>
-                    </div>
-                </div>
-                <!-- Bike Card 3 -->
-                <!-- <div class="bike-card">
-                    <div class="bike-image-container">
-                        <img src="assets/images/ab1.jpeg" alt="Honda AirBlade" class="bike-img">
-                    </div>
-                    <div class="bike-info">
-                        <h3 data-i18n="bike_3_name">Yamaha NVX</h3>
-                        <p class="bike-price">180.000đ <span data-i18n="price_day">/ ngày</span></p>
-                        <ul class="bike-specs">
-                            <li><i class="fas fa-bolt"></i> <span data-i18n="spec_sport">Thể thao</span></li>
-                            <li><i class="fas fa-road"></i> <span data-i18n="spec_grip">Bám đường tốt</span></li>
-                        </ul>
-                        <a href="tel:0919441908" class="btn-block" data-i18n="btn_book">Đặt Xe</a>
-                    </div>
-                </div> -->
+                <button class="slider-arrow next" id="slider-next"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
@@ -203,28 +234,55 @@
                 <p class="section-desc" data-i18n="explore_desc">Những điểm đến không thể bỏ lỡ cùng chiếc xe của bạn
                 </p>
             </div>
-            <div class="destinations-grid">
-                <div class="destination-card">
-                    <img src="assets/images/doi-cat-bay.jpg" alt="Red Sand Dunes" class="dest-img">
-                    <div class="dest-info">
-                        <h3 data-i18n="dest_1_name">Đồi Cát Bay</h3>
-                        <p data-i18n="dest_1_desc">Trải nghiệm trượt cát đầy thú vị.</p>
+            <div class="explore-slider fleet-slider"> <!-- Reuse fleet-slider styles -->
+                <button class="slider-arrow prev" id="explore-prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="slider-viewport">
+                    <div class="slider-track" id="explore-track">
+                        <div class="destination-card" onclick="openExploreModal(1)">
+                            <img src="assets/images/locations/doi-cat-bay.webp" alt="Red Sand Dunes" class="dest-img">
+                            <div class="dest-info">
+                                <h3 data-i18n="dest_1_name">Đồi Cát Bay</h3>
+                                <p data-i18n="dest_1_desc">Trải nghiệm trượt cát đầy thú vị.</p>
+                            </div>
+                        </div>
+                        <div class="destination-card" onclick="openExploreModal(2)">
+                            <img src="assets/images/locations/bien-hon-rom.webp" alt="Hon Rom Beach" class="dest-img">
+                            <div class="dest-info">
+                                <h3 data-i18n="dest_2_name">Biển Hòn Rơm</h3>
+                                <p data-i18n="dest_2_desc">Bãi biển xanh thơ mộng.</p>
+                            </div>
+                        </div>
+                        <div class="destination-card" onclick="openExploreModal(3)">
+                            <img src="assets/images/locations/bau-trang.webp" alt="White Sand Dunes" class="dest-img">
+                            <div class="dest-info">
+                                <h3 data-i18n="dest_3_name">Bàu Trắng</h3>
+                                <p data-i18n="dest_3_desc">Cung đường ven biển đẹp nhất Việt Nam.</p>
+                            </div>
+                        </div>
+                        <div class="destination-card" onclick="openExploreModal(4)">
+                            <img src="assets/images/locations/da-ong-dia.webp" alt="Ong Dia Rock" class="dest-img">
+                            <div class="dest-info">
+                                <h3 data-i18n="dest_4_name">Bãi Đá Ông Địa</h3>
+                                <p data-i18n="dest_4_desc">Check-in sống ảo cực chất.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="destination-card">
-                    <img src="assets/images/bien-hon-rom.jpg" alt="Hon Rom Beach" class="dest-img">
-                    <div class="dest-info">
-                        <h3 data-i18n="dest_2_name">Biển Hòn Rơm</h3>
-                        <p data-i18n="dest_2_desc">Bãi biển xanh thơ mộng.</p>
-                    </div>
-                </div>
-                <div class="destination-card">
-                    <img src="assets/images/bau-trang.jpg" alt="White Sand Dunes" class="dest-img">
-                    <div class="dest-info">
-                        <h3 data-i18n="dest_3_name">Bàu Trắng</h3>
-                        <p data-i18n="dest_3_desc">Cung đường ven biển đẹp nhất Việt Nam.</p>
-                    </div>
-                </div>
+                <button class="slider-arrow next" id="explore-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section id="map-location" class="section map-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title" data-i18n="map_title">Địa Chỉ Của Chúng Tôi</h2>
+            </div>
+            <div class="map-container">
+                <iframe src="https://maps.google.com/maps?q=10.952808,108.2139238&hl=vi&z=19&output=embed" width="100%"
+                    height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -233,18 +291,17 @@
     <footer id="contact" class="footer">
         <div class="container footer-content">
             <div class="footer-col">
-                <img src="assets/images/logo.png" alt="Xe Máy Ngọc Mười" class="footer-logo">
+                <img src="assets/images/logo/logo.webp" alt="Xe Máy Ngọc Mười" class="footer-logo">
                 <p data-i18n="footer_desc">Đồng hành cùng bạn trên mọi nẻo đường Phan Thiết - Mũi Né. Dịch vụ uy tín,
                     tận tâm, chất lượng.</p>
             </div>
             <div class="footer-col">
                 <h3 data-i18n="footer_contact">Liên Hệ</h3>
                 <ul class="contact-info">
-                    <li><i class="fas fa-map-marker-alt"></i> <a
-                            href="https://www.google.com/maps/place/133+Nguy%E1%BB%85n+%C4%90%C3%ACnh+Chi%E1%BB%83u,+Ph%C6%B0%E1%BB%9Dng+H%C3%A0m+Ti%E1%BA%BFn,+Th%C3%A0nh+ph%E1%BB%91+Phan+Thi%E1%BA%BFt,+B%C3%ACnh+Thu%E1%BA%ADn,+Vi%E1%BB%87t+Nam/@10.952808,108.2113489,17z/data=!3m1!4b1!4m6!3m5!1s0x31768537d841c8b1:0x821c66219e77412e!8m2!3d10.952808!4d108.2139238!16s%2Fg%2F11knl4v7yf?entry=ttu&g_ep=EgoyMDI2MDExOS4wIKXMDSoASAFQAw%3D%3D"
+                    <li><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com/?q=10.952808,108.2139238"
                             target="_blank" style="color: inherit; text-decoration: none;">133 Nguyễn Đình Chiểu, P. Hàm
                             Tiến, TP. Phan Thiết, Bình Thuận</a></li>
-                    <li><i class="fas fa-phone"></i> <a href="tel:0919441908"
+                    <li><i class="fas fa-phone"></i> <a href="#" onclick="openContactModal(); return false;"
                             style="color: inherit; text-decoration: none;">0919 441 908</a></li>
 
                 </ul>
@@ -275,7 +332,54 @@
                     <p id="modal-price" class="modal-price"></p>
                     <div id="modal-specs" class="modal-specs-list"></div>
                     <p id="modal-desc" class="modal-desc"></p>
-                    <a href="tel:0919441908" class="btn-primary btn-block" data-i18n="btn_book">Đặt Xe Ngay</a>
+                    <a href="#" onclick="openContactModal(); return false;" class="btn-primary btn-block"
+                        data-i18n="btn_book">Đặt Xe Ngay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Explore Detail Modal -->
+    <div id="explore-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeExploreModal()">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="explore-img" src="" alt="Destination Image">
+                </div>
+                <div class="modal-info">
+                    <h3 id="explore-title" class="modal-title"></h3>
+                    <p id="explore-desc" class="explore-desc"></p>
+                    <p id="explore-addr" class="explore-addr"></p>
+                    <a id="explore-map-btn" href="#" target="_blank" class="btn-primary btn-block">
+                        <i class="fas fa-map-marked-alt"></i> <span data-i18n="btn_map">Xem Bản Đồ</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Contact Choice Modal -->
+    <div id="contact-modal" class="modal-overlay">
+        <div class="modal-content" style="max-width: 400px;">
+            <button class="modal-close" onclick="closeContactModal()">&times;</button>
+            <div class="modal-body">
+                <div class="modal-info" style="text-align: center; padding: 20px;">
+                    <h3 class="modal-title" data-i18n="contact_title" style="margin-bottom: 25px;">Liên Hệ Với Chúng Tôi
+                    </h3>
+                    <div class="contact-choices">
+                        <a href="tel:0919441908" class="btn-contact-option btn-call">
+                            <i class="fas fa-phone-alt"></i> <span data-i18n="btn_call">Gọi Điện Thoại</span>
+                        </a>
+                        <a href="https://wa.me/84919441908" class="btn-contact-option btn-whatsapp" target="_blank">
+                            <i class="fab fa-whatsapp"></i> <span data-i18n="btn_whatsapp">Chat WhatsApp</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
